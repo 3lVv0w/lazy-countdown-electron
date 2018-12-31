@@ -1,12 +1,12 @@
 {
-  "name": "electron-quick-start",
+  "name": "lazy-countdown-electron",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "lazy countdown electron app",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/3lVv0w/lazy-countdown-electron",
   "keywords": [
     "Electron",
     "quick",
