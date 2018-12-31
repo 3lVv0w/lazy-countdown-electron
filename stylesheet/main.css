@@ -1,0 +1,41 @@
+    body {
+      margin: 0;
+      background-color: #000;
+      -ms-overflow-style: scrollbar;
+      -webkit-app-region: drag;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #232526;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #414345, #232526);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #414345, #232526);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+,
+      Safari 7+ */
+    }
+
+    .container h1 {
+      color: #fff;
+      font-size: 20vw;
+      font-family: "ComicNeueAngularRegular", "Helvetica Neue", sans-serif;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    .container .critical {
+      color: #FF5355;
+      font-weight: bold;
+    }
+
+    canvas {
+      background-color: transparent;
+      z-index: -1;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
