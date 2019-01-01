@@ -27,6 +27,10 @@
       margin: 0;
     }
 
+    #newYearText {
+      font-size: 5vw;
+    }
+
     .container .critical {
       color: #FF5355;
       font-weight: bold;

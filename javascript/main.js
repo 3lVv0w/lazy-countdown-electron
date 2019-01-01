@@ -1,12 +1,16 @@
-var NEW_YEAR = 15462756e5
-
-var isResumed = false
-var isNewYear = false
-
 document.addEventListener('DOMContentLoaded', () => {
+  console.log('Loaded')
+
   var container = document.querySelector('.container')
   var countdown = document.querySelector('#countdown')
   var newYear = document.querySelector('#newyear')
+  var newYearText = document.querySelector('#newYearText')
+
+  var NEW_YEAR = 15462756e5
+
+  var isResumed = false
+  var isNewYear = false
+
 
   document.querySelector('body').addEventListener('click', function () {
     if (isNewYear) {
@@ -36,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     newYear.style.display = 'block'
 
+    newYearText.style.display = 'block'
     createAudio()
   }
 
@@ -56,11 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
       itsNewYear()
 
       return
-    }
-
-    // 60 Seconds before New Year
-    if (secs <= 60) {
+    } else if (secs <= 60) {
       document.querySelector('#countdown').className = 'critical'
+    } else {
+      document.querySelector('#countdown').removeAttribute = 'critical'
     }
   }, 1000)
 
